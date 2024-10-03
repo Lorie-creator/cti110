@@ -1,11 +1,9 @@
 # CTI 110
-# P1LAB2 - Receipt
+# P1HW1 - math
 # Ilori
-# 10/1/24
+# 10/3/24
 
-print("P1LAB2")
-# For today, let's do a restaurant
-# that only sells burgers and fries
+print("P1HW1")
 
 num_burgers = 0
 num_fries = 0
