@@ -27,6 +27,7 @@ fry_total = num_fries * fry_cost
 meal_total = burger_total + fry_total
 
 # print the receipt
+# emojipedia has emojis to copy and paste
 print("-" * 20)
 print(num_burgers,"burger\t$", format (burger_total, ".2f") )
 print(num_fries, "fry\t\t$", format (fry_total, ".2f") )
