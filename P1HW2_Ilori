@@ -1,0 +1,37 @@
+# CTI 110
+# P1HW2 - Budget
+# Ilori
+# 10/8/24
+
+# This program starts a travel budget
+
+# Ask user to enter their budget
+# Ask user to enter travel destination
+# Ask user for the amount they will spend on gas
+# Ask user for the amount they will spend on accommodation
+# Ask user for the amount they will spend on food
+# Add expenses
+# Subtract expenses from budget
+#. Display Results
+print(" Trip Calculator")
+# Ask user to enter their budget
+budget_travel = float(input("What is your travel budget? $ "))
+# Where are they going
+Destination = input("where are you going? ")
+# How much will you spend on gas
+budget_gas = float(input("How much will you spend on gas? "))
+# How muh will you spend on accommodation
+budget_accommodation = float(input("How much will you spend on accommodation? "))
+# How much will you spen on food
+budget_food = float(input("How much will you spend on food? "))
+# Add expenses
+Total_expenses = budget_gas + budget_accommodation + budget_food
+print("Total_expenses: $", format(Total_expenses,".2f"))
+# subtract expenses from budget
+Left = budget_travel - Total_expenses
+print("Left: $", format(Left, ".2f"))
+
+
+
+
+
