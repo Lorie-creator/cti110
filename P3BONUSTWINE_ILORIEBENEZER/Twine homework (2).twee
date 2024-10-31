@@ -1,0 +1,84 @@
+:: StoryTitle
+Twine homework
+
+
+:: StoryData
+{
+  "ifid": "5D5B2034-FC86-4943-863E-655E7B2179D7",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: Back Door {"position":"250,475","size":"100,100"}
+
+
+
+:: Fight Assasin {"position":"275,725","size":"100,100"}
+You Decide to take on Assasin.
+
+(set: $roll to (random: 1,10))
+You roll a $roll!
+{
+(if: $roll = 8)[
+   The Assasin overpowers you...
+   (text-color: red)[Game Over]
+   [[Try Again->Story Start]]
+]
+(else-if:$roll >= 5)[
+     You barely escaped!
+     [[You made it->Go Home]]
+]
+(else-if: $roll >= 1)[
+      You Overpowered The Assasin!!
+      [[Go home victorious->Go Home]]
+    
+
+
+
+
+
+:: Front Door {"position":"25,475","size":"100,100"}
+knock Front door. No answer
+
+[[Go inside]]
+[[Go to back doo]]
+
+
+:: Go Home {"position":"650,350","size":"100,100"}
+
+
+
+:: Go inside {"position":"25,600","size":"100,100"}
+
+
+
+:: Go to back doo {"position":"150,600","size":"100,100"}
+Behind you appears the shadow of death..
+
+(text-color: red) [An Assasin]
+
+<img src="https://i.ebayimg.com/images/g/GWIAAOSwLNRhedA3/s-l1600.webp " width="400">
+
+[[Run from Assasin]]
+[[Fight Assasin]]
+
+
+
+
+:: Run from Assasin {"position":"150,725","size":"100,100"}
+
+
+
+:: Story Start {"position":"275,850","size":"100,100"}
+
+
+
+:: Untitled Passage {"position":"125,325","size":"100,100"}
+its Halloween🎃, and you are standing in front of the spooky house🎃 in the neighborhood🎃
+
+[[Front Door]]
+[[Back Door]]
+[[Go Home]]
