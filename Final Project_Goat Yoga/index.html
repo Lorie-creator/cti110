@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat Yoga NC</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(255,255,255,0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('goats')">Goat Breeds</a>
+        <a href="#" onclick="showPage('sessions')">Session Info</a>
+        <a href="#" onclick="showPage('feedback')">Feedback</a>
+    </nav>
+
+    <div id="about" class="container page active">
+        <h1>Goat Yoga NC: A Unique Wellness Experience</h1>
+        <img src="Goat1.png.png" width="500">
+        
+        <h2>About Goat Yoga</h2>
+        <p>Goat yoga is a revolutionary wellness practice that combines traditional yoga with the playful interaction of adorable goats. Originating as a novel concept, goat yoga has quickly become a popular form of animal-assisted therapy and exercise.</p>
+        <h2>Benefits of Goat Yoga</h2>
+        <ul>
+            <li>Stress Reduction: Interacting with animals can lower cortisol levels and reduce anxiety.</li>
+            <li>Improved Mood: Goats' playful nature brings joy and laughter to yoga practice.</li>
+            <li>Unique Exercise Experience: Combines physical fitness with animal therapy.</li>
+        </ul>    
+        <h2>Safety and Sanitation</h2>
+        <p>We prioritize both human and animal well-being. Our goats are:</p>
+        <ul>
+            <li>Regularly veterinarian-checked</li>
+            <li>Kept clean and groomed</li>
+            <li>Trained to interact safely with humans</li>
+        </ul>
+        <p>Participants are provided with sanitizing stations and mats are cleaned thoroughly between sessions.</p>
+
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:goatyogaNC@example.com">goatyogaNC@gmail.com</a>           </p>
+        <p>Phone: (910) 728-6954</p>
+    </div>
+    <div id="goats" class="container page">
+        <h1>Goat Breeds in Our Yoga Sessions</h1>
+        <img src="Goat2.png" width="500">
+        <table>
+            <thead>
+                <tr>
+                    <th>Breed</th>
+                    <th>Origin</th>
+                    <th>Size</th>
+                    <th>Temperament</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nigerian Dwarf</td>
+                    <td>West Africa</td>
+                    <td>Small (17-21 inches)</td>
+                    <td>Friendly, Playful</td>
+                </tr>
+                <tr>
+                    <td>Pygmy Goat</td>
+                    <td>West Africa</td>
+                    <td>Small (16-23 inches)</td>
+                    <td>Energetic, Social</td>
+                </tr>  
+                <tr>
+                    <td>Alpine</td>
+                    <td>French Alps</td>
+                    <td>Medium-Large</td>
+                    <td>Curious, Active</td>
+                </tr>
+                <tr>
+                    <td>Nubian</td>
+                    <td>Africa/Middle East</td>
+                    <td>Large</td>
+                    <td>Vocal, Affectionate</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+    <div id="sessions" class="container page">
+        <h1>Goat Yoga Session Information</h1>
+        <h2>Location</h2>
+        <p>Goat Yoga NC Wellness Center<br>
+        660 Happy Goat Lane<br>
+        Fayetteville, NC 28314</p>
+
+        <h2>Hours of Operation</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+               <td>Monday-Friday</td>
+                <td>9:00 AM - 6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 AM - 4:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+        <h2>Registration & Payment</h2>
+        <p>Session Options:</p>
+        <ul>
+            <li>Individual Session: $35</li>
+            <li>Group Session (5-10 people): $25 per person</li>
+            <li>Monthly Membership: $120</li>
+         </ul>
+        <p>Payment Methods: Credit Card, PayPal, Venmo</p>
+    </div>
+
+    <div id="feedback" class="container page">
+        <h1>Goat Yoga Feedback Form</h1>
+        <form> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="session-date">Session Date:</label>
+            <input type="date" id="session-date" name="session-date">
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <label for="rating">Overall Experience Rating:</label>
+            <select id="rating" name="rating">
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Fair</option>
+                <option value="1">Poor</option>
+            </select>
+          <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
